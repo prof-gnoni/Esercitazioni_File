@@ -161,6 +161,12 @@ void visualizzaInventario(const Prodotto inventario[], int n) {
     }
     cout << "\n--- DATI IN MEMORIA RAM ---" << endl;
     for (int i = 0; i < n; i++) {
-        cout << i + 1 << ") " << inventario[i].nome << " [" << inventario[i].quantita << " pz]" << endl;
+        cout << i + 1 << ") " <<
+            inventario[i].nome <<
+                " [" <<
+                    inventario[i].quantita <<
+                        " pz] -" <<
+                            " prezzo: " << inventario[i].prezzo <<
+                            endl;
     }
 }
